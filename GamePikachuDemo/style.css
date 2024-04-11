@@ -1,0 +1,23 @@
+#game-board {
+    display: grid;
+    grid-template-rows: repeat(11, 50px); 
+    grid-template-columns: repeat(18, 50px); 
+    gap: 5px; 
+    margin: 20px auto;
+}
+
+#game-board img {
+    position: absolute;
+    width: 41.33px;
+    height: 51.33px; /* Kích thước hình ảnh sẽ là 16x16px */
+}
+
+/* Tạo khoảng cách giữa các hình ảnh */
+#game-board img + img {
+    margin-left: 4px; /* Khoảng cách ngang giữa các hình ảnh */
+}
+
+/* Tạo hiệu ứng khi di chuột qua các hình ảnh */
+#game-board img:hover {
+    opacity: 0.7; /* Giảm độ trong suốt khi di chuột qua */
+}
